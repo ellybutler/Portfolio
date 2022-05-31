@@ -4,8 +4,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatIconModule } from '@angular/material/icon'
+
+import { SiteModule } from './site/site.module';
+
+import { SharedModule } from './site/shared/shared.module';
+
 
 @NgModule({
   declarations: [
@@ -14,9 +17,9 @@ import { MatIconModule } from '@angular/material/icon'
   imports: [
     BrowserModule,
     AppRoutingModule,
+    SiteModule,
     BrowserAnimationsModule,
-    MatToolbarModule,
-    MatIconModule,
+    SharedModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
