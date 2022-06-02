@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { AboutMeComponent } from './about-me/about-me.component';
+import { ContentComponent } from './content/content..component';
 
 const routes: Routes = [
   {
     path: 'site',
     pathMatch: 'full',
-    component: AboutMeComponent,
+    component: ContentComponent,
   }
 ];
 

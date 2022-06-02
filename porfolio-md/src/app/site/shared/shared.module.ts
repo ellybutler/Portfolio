@@ -3,16 +3,19 @@ import { CommonModule } from '@angular/common';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
-import { MatCardModule } from '@angular/material/card';
-import { MatListModule} from '@angular/material/list'; 
+
+import { MatListModule } from '@angular/material/list'; 
+import { MatTabsModule } from '@angular/material/tabs'; 
+import { MatGridListModule } from '@angular/material/grid-list'; 
 
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 export const SHARED_MATERIAL_MODULES = [
   MatToolbarModule, 
   MatIconModule,
-  MatCardModule,
+  MatGridListModule,
   MatListModule,
+  MatTabsModule,
   FlexLayoutModule
 ]
 
