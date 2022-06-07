@@ -1,18 +1,29 @@
-<!-- <div class="hero-image">
+<div class="hero-image">
     <mat-toolbar>
         <span class="example-spacer"></span>
 
         <mat-list role="list" fxLayout="row">
-            <mat-list-item role="listitem"><a href="#">About</a></mat-list-item>
-            <mat-list-item role="listitem"><a href="#">Skills</a></mat-list-item>
-            <mat-list-item role="listitem"><a href="#">CV</a></mat-list-item>
-            <mat-list-item role="listitem"><a href="#">Portfolio</a></mat-list-item>
-            <mat-list-item role="listitem"><a href="#">Contact/Links</a></mat-list-item>
+            <mat-list-item role="listitem"><a (click)="scrollTo('about')">About</a></mat-list-item>
+            <mat-list-item role="listitem"><a (click)="scrollTo('skills')">Skills</a></mat-list-item>
+            <mat-list-item role="listitem"><a (click)="scrollTo('portfolio')">Portfolio</a></mat-list-item>
+            <mat-list-item role="listitem"><a (click)="scrollTo('contact')">Contact/Links</a></mat-list-item>
         </mat-list>
-
     </mat-toolbar>
-    <div class="hero-text">
-        <h1 style="font-size:50px">I'm Elly Butler</h1>
+    <div class="hero-text ">
+        <h1 style="font-size:50px ">Elly Butler</h1>
+        <div class="scrolling-words-container ">
+
+            <div class="scrolling-words-box ">
+                <ul>
+                    <li>Designer</li>
+                    <li>Programmer</li>
+                    <li>Gamer</li>
+                    <li>Design</li>
+                    <li>Woodworker</li>
+                </ul>
+            </div>
+
+        </div>
     </div>
-</div> -->
+</div>
 <router-outlet></router-outlet>

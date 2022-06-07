@@ -12,4 +12,7 @@ export class ContentComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  zoomImage() {
+    alert("testing pharse");
+  }
 }

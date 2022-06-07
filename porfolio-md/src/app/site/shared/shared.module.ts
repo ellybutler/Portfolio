@@ -7,14 +7,17 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list'; 
 import { MatTabsModule } from '@angular/material/tabs'; 
 import { MatGridListModule } from '@angular/material/grid-list'; 
+import { MatDialogModule } from '@angular/material/dialog';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
+
 
 export const SHARED_MATERIAL_MODULES = [
   MatToolbarModule, 
   MatIconModule,
   MatGridListModule,
   MatListModule,
+  MatDialogModule,
   MatTabsModule,
   FlexLayoutModule
 ]

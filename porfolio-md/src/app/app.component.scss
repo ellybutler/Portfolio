@@ -2,8 +2,43 @@
     flex: 1 1 auto;
 }
 
-.red {
-    border: 1px solid red;
+$item-count: 5;
+@keyframes scrollUp {
+    @for $i from 1 through ($item-count - 1) {
+        #{($i * 25) - 10%},
+        #{$i * 25%} {
+            transform: translateY((-100% / $item-count) * $i);
+        }
+    }
+}
+
+mat-toolbar {
+    cursor: pointer;
+}
+
+.scrolling-words-container {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.scrolling-words-box {
+    height: 3rem;
+    margin: auto;
+    overflow: hidden;
+    ul {
+        margin: 0 0.625rem;
+        padding: 0;
+        animation: scrollUp 4s infinite;
+        li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 3rem;
+            list-style: none;
+        }
+    }
 }
 
 mat-toolbar {
@@ -11,9 +46,9 @@ mat-toolbar {
 }
 
 mat-toolbar {
-    background-color: transparent;
+    background-color: rgba(20, 20, 20, 0.2);
+    ;
     color: white;
-    position: sticky;
     position: -webkit-sticky;
     /* For macOS/iOS Safari */
     top: 0;
