@@ -8,6 +8,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatTabsModule } from '@angular/material/tabs'; 
 import { MatGridListModule } from '@angular/material/grid-list'; 
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatCardModule } from '@angular/material/card';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
 
@@ -18,6 +19,7 @@ export const SHARED_MATERIAL_MODULES = [
   MatGridListModule,
   MatListModule,
   MatDialogModule,
+  MatCardModule,
   MatTabsModule,
   FlexLayoutModule
 ]
